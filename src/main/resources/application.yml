@@ -1,1 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:surveydb
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
 
+server:
+  port: 8085
+  error:
+    include-message: always
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      path-mapping:
+        health: /health
+
+api:
+  controller:
+    survey-path: /api/v1/surveys

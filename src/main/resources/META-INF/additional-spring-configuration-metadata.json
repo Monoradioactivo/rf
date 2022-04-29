@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "api.controller.survey-path",
+      "type": "java.lang.String",
+      "description": "Description for api.controller.survey-path."
+  }
+] }
